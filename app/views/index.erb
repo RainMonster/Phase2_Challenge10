@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Welcome to the Facebook Peeker!</h1>
+
+  <% if @graph %>
+    <h3>Here is the profile picture for <%= @name %>:</h3><br>
+    <img src="<%= @picture %>"></img><br>
+  <% end %>
+  <h3>Make me post something embarrassing on facebook:</h3>
+  <form action="post_to_facebook" method="post"><input type="text" name="cool_post" placeholder="post something to facebook">
+    <input type="submit">
+  </form>
+
+</div>
